@@ -1,0 +1,49 @@
+name: 'Clothes', emoji: '👕' },
+    { name: 'Electronics', emoji: '💻' },
+    { name: 'Food', emoji: '🍔' },
+    { name: 'Textbooks', emoji: '📚' },
+    { name: 'Services', emoji: '🔧' },
+    { name: 'Jobs', emoji: '💼' },
+    { name: 'Properties (Rent)', emoji: '🏠' },
+    { name: 'Seeking Work', emoji: '🧍' },
+    { name: 'CVs', emoji: '📄' },
+    { name: 'Drinks', emoji: '🥤' },
+  ];
+
+  return (
+    <div className="min-h-screen flex flex-col bg-gray-50">
+      {/* Header */}
+      <header className="bg-white shadow p-4 text-center">
+        <h1 className="text-2xl font-bold text-gray-800">Mueni's Plug 🛒</h1>
+        <p className="text-sm text-gray-600">Your campus buy & sell hub</p>
+      </header>
+
+      {/* Search */}
+      <div className="p-4">
+        <input
+          type="text"
+          placeholder="Search items or categories..."
+          className="w-full p-2 border rounded-lg shadow-sm"
+        />
+      </div>
+
+      {/* Categories */}
+      <main className="flex-1 p-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        {categories.map((cat) => (
+          <div
+            key={cat.name}
+            className="bg-white p-4 rounded-xl shadow hover:bg-blue-50 text-center"
+          >
+            <div className="text-3xl mb-2">{cat.emoji}</div>
+            <div className="text-sm font-semibold">{cat.name}</div>
+          </div>
+        ))}
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-white p-4 text-center text-sm text-gray-500 border-t">
+        &copy; {new Date().getFullYear()} Mueni's Plug. All rights reserved.
+      </footer>
+    </div>
+  );
+}
