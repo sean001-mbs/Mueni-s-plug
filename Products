@@ -1,0 +1,61 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopNow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
+
+    <section class="products">
+        <div class="filters">
+            <h3>Filters</h3>
+            <div class="filter-section">
+                <h4>Category</h4>
+                <select>
+                    <option>All Categories</option>
+                    <option>Electronics</option>
+                    <option>Fashion</option>
+                    <option>Home & Garden</option>
+                </select>
+            </div>
+            <div class="filter-section">
+                <h4>Price Range</h4>
+                <input type="range" min="0" max="100000" value="50000">
+                <span class="price-range-value">Ksh 50,000</span>
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Smartphone">
+                <div class="product-info">
+                    <h3>iPhone 14 Pro Max</h3>
+                    <p class="price">Ksh 150,000</p>
+                    <p class="location">Nairobi</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/electronics.png" alt="Laptop">
+                <div class="product-info">
+                    <h3>MacBook Pro</h3>
+                    <p class="price">Ksh 210,000</p>
+                    <p class="location">Mombasa</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
